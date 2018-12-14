@@ -6865,3 +6865,13 @@ vip：￥114元
 钻石会员：￥96元
 2018-12-14 16:14:12,132 - C:\Python\Python36\lib\site-packages\selenium\webdriver\remote\remote_connection.py[line:212]-INFO:Could not connect to port 4723 on host localhost
 2018-12-14 16:14:12,132 - C:\Python\Python36\lib\site-packages\selenium\webdriver\remote\remote_connection.py[line:232]-INFO:Could not get IP address for host: localhost
+2018-12-14 20:58:38,752 - D:\PythonProject\Demo\AppiumDemo\testcase\test_login.py[line:26]-INFO:使用账号 [nemo] 和密码 [****] 登录！
+2018-12-14 20:59:56,250 - D:\PythonProject\Demo\AppiumDemo\testcase\test_login.py[line:26]-INFO:使用账号 [nemo] 和密码 [****] 登录！
+2018-12-14 21:10:32,265 - D:\PythonProject\Demo\AppiumDemo\testcase\test_login.py[line:26]-INFO:使用账号 [nemo] 和密码 [asdf1234] 登录！
+2018-12-14 21:10:57,498 - D:\PythonProject\Demo\AppiumDemo\testcase\test_order.py[line:36]-INFO:运费：不包邮
+库存：79
+商店价格：￥120.00元
+市场价格：￥144元
+注册用户：￥120元
+vip：￥114元
+钻石会员：￥96元

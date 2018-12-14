@@ -16,7 +16,7 @@ class TestOrder(Base):
         # 点击个人中心
         self.ui.find(Public.ANDROID_MY_CENTER_BUTTON).click()
         # 点击登录
-        self.ui.find(MyCenter.IN_LOGIN_BUTTON).click()
+        self.ui.find(MyCenter.IN_LOGIN_CLK).click()
         # 输入用户名
         self.ui.find(Login.ANDROID_USERNAME).send_keys('nemo')
         # 输入密码

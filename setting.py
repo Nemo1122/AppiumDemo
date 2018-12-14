@@ -6,12 +6,13 @@ PATH = os.path.dirname(
     os.path.abspath(__file__)
 )
 
-HTML_PATH = os.path.join(PATH, 'report', 'html')
-IMG_PATH = os.path.join(PATH, 'report', 'img')
-LOG_PATH = os.path.join(PATH, 'report', 'log')
+REPORT_PATH = os.path.join(PATH, 'report')
+HTML_PATH = os.path.join(REPORT_PATH, 'html')
+IMG_PATH = os.path.join(REPORT_PATH, 'img')
+LOG_PATH = os.path.join(REPORT_PATH, 'log')
 TEST_PATH = os.path.join(PATH, 'testcase')
 APP_PATH = os.path.join(PATH, 'app')
-ERR_IMG_PATH = os.path.join(PATH, 'report', 'err_img')
+ERR_IMG_PATH = os.path.join(REPORT_PATH, 'err_img')
 
 DESIRED_CAPABILITIES = {
     'deviceName': '192.168.199.101:5555',
@@ -34,5 +35,7 @@ APORT = 4723
 # 日志
 LOG_LEVEL = 'info'
 LOG_NAME = 'log'
+
+ALLURE_PATH = os.path.join(PATH, 'bin', 'allure-commandline', 'bin')
 
 XYAZ = '127.0.0.1:21503'

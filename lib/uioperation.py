@@ -43,6 +43,7 @@ class UiOperation():
                     # name CONTAINS 'testcase'
                     element = self.driver.find_element_by_ios_predicate("name CONTAINS '%s'" % locator)
         else:
+            # 传入非字符串则区分 Android 和 iOS
             if self.platform == 'Android':
                 element = self.driver.find_element(*locator)
             else:
