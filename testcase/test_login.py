@@ -3,7 +3,7 @@ from page.public import Public
 from page.my_center import MyCenter
 from page.login import Login
 from page.setting_page import Setting
-from lib.utils import log
+from lib.utils import log, screen_when_err
 from testcase.base import Base
 import unittest
 
@@ -11,6 +11,7 @@ import unittest
 class TestLogin(Base):
 
     # @pytest.mark.skip()
+    @screen_when_err
     def test_login(self):
         # 点击个人中心
         self.ui.find(Public.ANDROID_MY_CENTER_BUTTON).click()
@@ -19,10 +20,10 @@ class TestLogin(Base):
         # 输入用户名
         self.ui.find(Login.ANDROID_USERNAME).send_keys('nemo')
         # 输入密码
-        self.ui.find(Login.ANDROID_PASSWORD).send_keys('asdf1234')
+        self.ui.find(Login.ANDROID_PASSWORD).send_keys('****')
         # 点击登录按钮
         self.ui.find(Login.LOGIN_BUTTON).click()
-        log.info('使用账号 [nemo] 和密码 [asdf1234] 登录！')
+        log.info('使用账号 [nemo] 和密码 [****] 登录！')
         # 检查个人中心
         username = self.ui.find(MyCenter.ANDROID_USER_NAME_TXT).text
         user_level = self.ui.find(MyCenter.ANDROID_USER_LEVEL_TXT).text

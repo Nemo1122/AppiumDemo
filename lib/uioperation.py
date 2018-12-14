@@ -78,8 +78,8 @@ class UiOperation():
         self.swipe(0.5, 0.2, 0.5, 0.8)
         time.sleep(1)
 
-    def screen(self, filename):
-        img = os.path.join(setting.IMG_PATH, time.strftime('%Y%m%d%H%M%S_') + filename + '.png')
+    def screen(self, filename, path=setting.IMG_PATH):
+        img = os.path.join(path, time.strftime('%Y%m%d%H%M%S_') + filename + '.png')
         print(img)
         self.driver.get_screenshot_as_file(img)
 

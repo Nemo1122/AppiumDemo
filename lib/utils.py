@@ -33,6 +33,19 @@ def wait(poll=0.5, message=''):
     return decorator
 
 
+def screen_when_err(func):
+    def wrapper(self, *args, **kw):
+        try:
+            # 捕获函数异常
+            return func(self, *args, **kw)
+        except Exception:
+            # 函数出现异常后的处理
+            self.ui.screen(func.__name__+'_err', path=setting.ERR_IMG_PATH)
+            # 为了能在结果展示异常，需要重新抛出该异常
+            raise
+    return wrapper
+
+
 class MyLogger(object):
     def __init__(self,file_name,level='info',backCount=5,when='D'):
         logger = logging.getLogger()
@@ -58,6 +71,7 @@ class MyLogger(object):
         }
         sss = sss.lower()
         return level.get(sss)
+
 
 path = os.path.join(setting.LOG_PATH,  setting.LOG_NAME)  # 拼好日志的绝对路径
 log = MyLogger(path, setting.LOG_LEVEL).logger

@@ -20,7 +20,6 @@ class Prepare:
                 print(device)
                 return device
 
-
     def _appium_server_command(self, aport, bpport, device=None):
         if device:
             appium = utils.cmd("appium -p %s -bp %s -U %s" %

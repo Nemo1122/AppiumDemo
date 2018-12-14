@@ -6863,3 +6863,5 @@ vip：￥114元
 注册用户：￥120元
 vip：￥114元
 钻石会员：￥96元
+2018-12-14 16:14:12,132 - C:\Python\Python36\lib\site-packages\selenium\webdriver\remote\remote_connection.py[line:212]-INFO:Could not connect to port 4723 on host localhost
+2018-12-14 16:14:12,132 - C:\Python\Python36\lib\site-packages\selenium\webdriver\remote\remote_connection.py[line:232]-INFO:Could not get IP address for host: localhost

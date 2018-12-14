@@ -11,6 +11,7 @@ IMG_PATH = os.path.join(PATH, 'report', 'img')
 LOG_PATH = os.path.join(PATH, 'report', 'log')
 TEST_PATH = os.path.join(PATH, 'testcase')
 APP_PATH = os.path.join(PATH, 'app')
+ERR_IMG_PATH = os.path.join(PATH, 'report', 'err_img')
 
 DESIRED_CAPABILITIES = {
     'deviceName': '192.168.199.101:5555',
